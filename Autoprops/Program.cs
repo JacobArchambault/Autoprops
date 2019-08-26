@@ -13,12 +13,15 @@ namespace Autoprops
             Console.WriteLine("***** Fun with Automatic Properties *****\n");
 
             Car c = new Car();
+            Garage g = new Garage();
             c.PetName = "Frank";
             c.Speed = 55;
             c.Color = "Red";
-
-            Console.WriteLine("Your car is named {0}? That's odd...", c.PetName);
             c.DisplayStats();
+            g.myAuto = c;
+
+            Console.WriteLine("Number of Cars in garages: {0}", g.NumberOfCars);
+            Console.WriteLine("Your car is named: {0}", g.myAuto.PetName);
 
             Console.ReadLine();
         }
