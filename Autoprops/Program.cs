@@ -10,6 +10,17 @@ namespace Autoprops
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("***** Fun with Automatic Properties *****\n");
+
+            Car c = new Car();
+            c.PetName = "Frank";
+            c.Speed = 55;
+            c.Color = "Red";
+
+            Console.WriteLine("Your car is named {0}? That's odd...", c.PetName);
+            c.DisplayStats();
+
+            Console.ReadLine();
         }
     }
 }
