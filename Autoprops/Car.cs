@@ -8,6 +8,7 @@ namespace Autoprops
 {
     class Car
     {
+        private int numberOfDoors = 2;
         public string PetName { get; set; }
         public int Speed { get; set; }
         public string Color { get; set; }
